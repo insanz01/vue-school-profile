@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Landing from '@/components/Landing'
+import Tentang from '@/components/Tentang'
 
 Vue.use(Router)
 
@@ -8,7 +9,11 @@ export default new Router({
   mode: 'history',
   routes: [{
     path: '/',
-    name: 'Hello',
-    component: Hello
+    name: 'Landing',
+    component: Landing
+  }, {
+    path: '/about',
+    name: 'Tentang',
+    component: Tentang
   }]
 })

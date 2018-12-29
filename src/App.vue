@@ -2,7 +2,25 @@
   <div id="app">
     <!-- awal header -->
     <header>
-      <span>{{name}} PWA</span>
+      <a class="navbar-brand text-white bawah-dikit kanan-dikit" href="/">{{name}} PWA</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
+        <!-- <div class="collapse navbar-collapse"> -->
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/about">Tentang</a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
     </header>
     <!-- akhir header -->
     <!-- awal konten utama -->
@@ -12,8 +30,8 @@
     <!-- akhir konten utama -->
     <!-- awal bagian copyright -->
     <footer>
-      <div class="py-5">
-        <p class="lead text-center">&copy; {{tahun}} Amanda Fahmidyna</p>
+      <div class="py-3">
+        <p class="lead text-center">&copy; {{tahun}} - {{developer}}</p>
       </div>
     </footer>
     <!-- akhir bagian copyright -->
@@ -25,7 +43,8 @@ export default {
   name: "app",
   data: function() {
     return {
-      name: "Web Sekolah"
+      name: "Web Sekolah",
+      developer: "Amanda Fahmidyna"
     };
   },
   computed: {
@@ -42,22 +61,26 @@ body {
   margin: 0;
 }
 
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495e;
-  color: #ffffff;
+.bawah-dikit {
+  margin-top: 10px !important;
 }
 
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+.kanan-dikit {
+  margin-left: 10px !important;
 }
+
+header {
+  background-color: #252525;
+  padding: 6px;
+}
+
+.nav-link:hover {
+  color: aqua !important;
+}
+
+.navbar-brand:hover {
+  color: aquamarine !important;
+}
+
+/* ini warna theme default 4DBA87 */
 </style>
