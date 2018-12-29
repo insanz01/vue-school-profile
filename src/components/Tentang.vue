@@ -27,15 +27,5 @@ export default {
 .tebal {
   font-weight: bold !important;
 }
-
-@media (max-width: 400px) {
-  .title-sm {
-    font-size: 2em !important;
-  }
-
-  .p-sm {
-    font-size: 0.9em !important;
-  }
-}
 </style>
 

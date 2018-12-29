@@ -88,26 +88,6 @@ export default {
   border-left: 1px solid grey;
 }
 
-@media (max-width: 400px) {
-  .title-sm {
-    font-size: 2em !important;
-  }
-
-  .p-sm {
-    font-size: 0.9em !important;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  cursor: default;
-}
-
 /* .jumbotron {
   background: url("../assets/img/nasa.jpg") no-repeat center center;
   -webkit-background-size: 100% 100%;

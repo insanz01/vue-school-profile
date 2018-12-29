@@ -3,24 +3,29 @@
     <!-- awal header -->
     <header>
       <a class="navbar-brand text-white bawah-dikit kanan-dikit" href="/">{{name}} PWA</a>
+      <!-- awal navigasi menu -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
-        <!-- <div class="collapse navbar-collapse"> -->
         <ul class="nav">
+          <!-- halaman beranda berupa landing page -->
+          <!-- berupa informasi singkat mengenai sekolahan -->
           <li class="nav-item">
             <a class="nav-link text-white" href="/">Beranda</a>
           </li>
+          <!-- halaman profil merupakan informasi detail mengenai sekolahan -->
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Profil</a>
           </li>
+          <!-- halaman galeri merupakan kumpulan foto / album mengenai sekolahan -->
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Galeri</a>
           </li>
+          <!-- halaman tentang merupakan informasi tentang sekolahan secara selayang pandang -->
           <li class="nav-item">
             <a class="nav-link text-white" href="/about">Tentang</a>
           </li>
         </ul>
-        <!-- </div> -->
       </nav>
+      <!-- akhir navigasi menu -->
     </header>
     <!-- akhir header -->
     <!-- awal konten utama -->
@@ -75,11 +80,31 @@ header {
 }
 
 .nav-link:hover {
-  color: aqua !important;
+  color: aquamarine !important;
 }
 
 .navbar-brand:hover {
   color: aquamarine !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
+@media (max-width: 400px) {
+  .title-sm {
+    font-size: 2em !important;
+  }
+
+  .p-sm {
+    font-size: 0.9em !important;
+  }
 }
 
 /* ini warna theme default 4DBA87 */
