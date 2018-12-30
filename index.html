@@ -28,11 +28,17 @@
   <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
   <% }}} %>
   <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/animate.min.css">
 </head>
 
 <body>
+  <script src="./static/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+
+  </script>
   <noscript>
-    This is your fallback content in case JavaScript fails to load.
+    Javascript gagal diload :(
   </noscript>
   <div id="app"></div>
   <!-- Todo: only include in production -->

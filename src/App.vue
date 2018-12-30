@@ -2,7 +2,7 @@
   <div id="app">
     <!-- awal header -->
     <header>
-      <a class="navbar-brand text-white bawah-dikit kanan-dikit" href="/">{{name}} PWA</a>
+      <a class="navbar-brand text-white bawah-dikit kanan-dikit" href="/">{{namaSekolah}} PWA</a>
       <!-- awal navigasi menu -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
         <ul class="nav">
@@ -36,7 +36,7 @@
     <!-- awal bagian copyright -->
     <footer>
       <div class="py-3">
-        <p class="lead text-center">&copy; {{tahun}} - {{developer}}</p>
+        <p class="lead text-center" :class="efekAnimasi">&copy; {{tahun}} - {{pengembang}}</p>
       </div>
     </footer>
     <!-- akhir bagian copyright -->
@@ -48,8 +48,9 @@ export default {
   name: "app",
   data: function() {
     return {
-      name: "Web Sekolah",
-      developer: "Amanda Fahmidyna"
+      namaSekolah: "Web Sekolah",
+      pengembang: "Amanda Fahmidyna",
+      efekAnimasi: "wow fadeInUp"
     };
   },
   computed: {
